@@ -1,0 +1,483 @@
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+html {
+    font-family: "Lucida Sans", sans-serif;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+    max-width: 100%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+li {
+    float: left;
+    border-right: 2px solid #000;
+    width: 20%;
+}
+
+li:last-child {
+    border-right: none;
+}
+
+li a {
+    display: block;
+    color: blue;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+}
+
+input {
+    outline: none;
+}
+
+/* Clears, forcing a new row */
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+/* This adds a gutter to the grid */
+[class*="col-"] {
+    float: left;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+h2{
+    text-align: center;
+}
+  
+
+/* Media query for mobile: */
+@media only screen and (max-width: 425px) {
+    .col-m-1 {width: 100%;}
+    .col-m-2 {width: 100%;}
+    .col-m-3 {width: 100%;}
+    .col-m-4 {width: 100%;}
+    .col-m-5 {width: 100%;}
+    .col-m-6 {width: 100%;}
+    .col-m-7 {width: 100%;}
+    .col-m-8 {width: 100%;}
+    .col-m-9 {width: 100%;}
+    .col-m-10 {width: 100%;}
+    .col-m-11 {width: 100%;}
+    .col-m-12 {width: 100%;}
+
+    .dropbtn {
+        background-color: #f1f1f1;
+        border: none;
+        cursor: pointer;
+      }
+      
+      .dropdown {
+        position: relative;
+        display: block;
+        width: 15vw;
+        right: 0vw;
+        top: -50px;
+      }
+      
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+      
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+      
+      .dropdown-content a:hover {
+          background-color: #f1f1f1
+        }
+      
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+
+    .collapsible {
+        background-color: #777;
+        color: white;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+        margin-top: 5px;
+      }
+      
+      .active, .collapsible:hover {
+        background-color: #555;
+      }
+      
+      .content {
+        padding: 0 18px;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+        background-color: #f1f1f1;
+        border-style: solid;
+        border-width: 2px;
+      }
+
+    .menu-bar{
+        display: none;
+    }
+
+    a{
+        font-size: 3vw;
+    }
+
+    .aerial{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .icon{
+        position: relative;
+        max-width:20vw;
+        float: middle;
+        display: block;
+        margin-left: 40%;
+        margin-right: auto;
+        top: 5px;
+    }
+
+    .header{
+        display:none;
+    }
+
+    .news{
+        display: none;
+        max-width:100%;
+        border-style: solid;
+        border-width: 2px;
+        float: bottom;
+        margin-top: 10px;
+    }
+
+    .campus{
+        max-width: 100%;
+        border-style: solid;
+        border-width: 2px;
+        float: top;
+        margin-top: 0px;
+        
+    }
+
+    .facts{
+        display: none;
+        max-width: 100%;
+        border-style: solid;
+        border-width: 2px;
+        float: middle;
+        margin-top: 10px;
+    }
+
+    h3{
+        font-size: 3vw;
+        margin-top: 1vh;
+        margin-bottom: 1vh;
+    }
+    h2{
+        font-size: 5vw;
+        margin-top: 1vh;
+        margin-bottom: 1vh;
+    }
+
+    p{
+        font-size: 2.5vw;
+    }
+
+}
+
+/* Media query for tablet: */
+@media only screen and (min-width: 426px) and (max-width: 768px){
+    .col-t-1 {width: 8.33%;}
+    .col-t-2 {width: 16.66%;}
+    .col-t-3 {width: 25%;}
+    .col-t-4 {width: 33.33%;}
+    .col-t-5 {width: 41.66%;}
+    .col-t-6 {width: 50%;}
+    .col-t-7 {width: 58.33%;}
+    .col-t-8 {width: 66.66%;}
+    .col-t-9 {width: 75%;}
+    .col-t-10 {width: 83.33%;}
+    .col-t-11 {width: 91.66%;}
+    .col-t-12 {width: 100%;}
+
+    .dropdown{
+        display: none;
+    }
+
+    .content{
+        display: none;
+    }
+
+    .collapsible{
+        display: none;
+    }
+
+    a{
+        font-size: 2.5vw;
+    }
+
+    .menu-bar{
+        float: right;
+        margin-top: 20px
+    }
+
+    .aerial{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .icon{
+        max-width:20vw;
+        float: left;
+    }
+
+    .header{
+        display:none;
+    }
+
+    .news{
+        max-width:100%;
+        border-style: solid;
+        border-width: 2px;
+        float: bottom;
+        margin-top: 10px;
+    }
+
+    .campus{
+        max-width: 100%;
+        border-style: solid;
+        border-width: 2px;
+        float: top;
+        margin-top: 10px;
+    }
+
+    .facts{
+        max-width: 100%;
+        border-style: solid;
+        border-width: 2px;
+        float: middle;
+        margin-top: 10px;
+    }
+
+    h3{
+        font-size: 3vw;
+        margin-top: 1vh;
+        margin-bottom: 1vh;
+    }
+    h2{
+        font-size: 4vw;
+        margin-top: 1vh;
+        margin-bottom: 1vh;
+    }
+
+    p{
+        font-size: 2vw;
+    }
+}
+
+/* Media query for laptop: */
+@media only screen and (min-width: 769px) and (max-width: 1024px){
+    .col-l-1 {width: 8.33%;}
+    .col-l-2 {width: 16.66%;}
+    .col-l-3 {width: 25%;}
+    .col-l-4 {width: 33.33%;}
+    .col-l-5 {width: 41.66%;}
+    .col-l-6 {width: 50%;}
+    .col-l-7 {width: 58.33%;}
+    .col-l-8 {width: 66.66%;}
+    .col-l-9 {width: 75%;}
+    .col-l-10 {width: 83.33%;}
+    .col-l-11 {width: 91.66%;}
+    .col-l-12 {width: 100%;}
+
+    .dropdown{
+        display: none;
+    }
+
+    .content{
+        display: none;
+    }
+
+    .collapsible{
+        display: none;
+    }
+
+    .icon{
+        max-width:100%;
+        height: auto;
+        float: right;
+        margin-right: 15px;
+        margin-top: 15px;
+    }
+
+    .header{
+        padding-right: 5px;
+        padding-left: 5px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        
+        max-width:100%;
+        height: auto;
+        border-style: solid;
+        border-width: 2px;
+    }
+
+    .news{
+        max-width:100%;
+        border-style: solid;
+        border-width: 2px;
+        float: bottom;
+        position: relative;
+        margin-bottom: 5px;
+        margin-top: 10px;
+    }
+
+    .campus{
+        max-width: 55vw;
+        border-style: solid;
+        border-width: 2px;
+        float: top;
+        float: left;
+        position: relative;
+        height: 475px;
+    }
+
+    .facts{
+        max-width: 55vw;
+        border-style: solid;
+        border-width: 2px;
+        float: right;
+        position: relative;
+        height: 475px;
+    }
+
+    h2{
+        font-size: 3.5vw;
+        margin-top: 1vh;
+        margin-bottom: 1vh;
+    }
+
+    p{
+        font-size: 1.5vw;
+    }
+}
+
+/* Media query for desktop: */
+@media only screen and (min-width: 1025px) {
+    .col-d-1 {width: 8.33%;}
+    .col-d-2 {width: 16.66%;}
+    .col-d-3 {width: 25%;}
+    .col-d-4 {width: 33.33%;}
+    .col-d-5 {width: 41.66%;}
+    .col-d-6 {width: 50%;}
+    .col-d-7 {width: 58.33%;}
+    .col-d-8 {width: 66.66%;}
+    .col-d-9 {width: 75%;}
+    .col-d-10 {width: 83.33%;}
+    .col-d-11 {width: 91.66%;}
+    .col-d-12 {width: 100%;}
+
+    .dropdown{
+        display: none;
+    }
+
+    .content{
+        display: none;
+    }
+
+    .collapsible{
+        display: none;
+    }
+
+    .menu-bar{
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .icon{
+        max-width:15vw;
+        height: auto;
+        float: right;
+    }
+
+    .header{
+        padding-right: 5px;
+        padding-left: 5px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        
+        max-width:100%;
+        height: auto;
+        border-style: solid;
+        border-width: 2px;
+    }
+
+    .news{
+        max-width:90%;
+        border-style: solid;
+        border-width: 2px;
+        float:right;
+        min-height: 78vh;
+        position: relative;
+        bottom: 58px;
+    }
+
+    .campus{
+        max-width: 38vw;
+        min-height: 72vh;
+        border-style: solid;
+        border-width: 2px;
+        float: left;
+    }
+
+    .facts{
+        max-width: 45vw;
+        margin-left: 2vw;
+        min-height: 72vh;
+        border-style: solid;
+        border-width: 2px;
+        float: left;
+    }
+
+    h2{
+        font-size: 3vw;
+        margin-top: 1vh;
+        margin-bottom: 1vh;
+    }
+
+    p{
+        font-size: 1.5vw;
+    }
+
+}
